@@ -217,14 +217,16 @@ document.addEventListener('DOMContentLoaded', () => {
             info.innerHTML += `
                 <div class="s">
                 ${key}.
-                ${people[key].name} 
-                <strong> (Дата рождения: ${people[key].birthday.split('-').reverse().join(".")}. Возраст: ${age} </strong> ) <br> До дня рождения осталось:
+                <span style="font-size: 20px;">${people[key].name}</span>
+                <strong> (Дата рождения: ${people[key].birthday.split('-').reverse().join(".")}. Возраст: ${age} </strong> ) <br> 
+                <span style="color:#0B6121;">До дня рождения осталось:
                 (
                 ${countDays} дней  
                 ${countHours} часов 
                 ${countMinutes} минут 
                 ${countSecondss} секунд
                 )
+                </span>
                 </div>
             `;
 
