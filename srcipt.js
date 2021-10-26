@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name:'Артеменко Полина Дмитриевна'
         },
         17: {
-            birthday: '1965-09-27',
+            birthday: '1964-09-27',
             name:'Артеменко Дмитрий Николаевич'
         },
         18: {
