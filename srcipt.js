@@ -88,15 +88,25 @@ document.addEventListener('DOMContentLoaded', () => {
         20: {
             birthday: '1952-10-21',
             name:'Белименко Григорий Григорьевич'
+        },
+        21: {
+            birthday: '2010-05-04',
+            name:'Касперская Мария Сергеевна'
+        },
+        22: {
+            birthday: '2011-09-25',
+            name:'Касперская Елизавета Сергеевна'
+        },
+        23: {
+            birthday: '2013-09-05',
+            name:'Касперский Дмитрий Сергеевич'
+        },
+        24: {
+            birthday: '1991-05-02',
+            name:'Касперская Наталья Александровна'
         }
         
-       /*
-        Касперкий Маша 4 мая 2010
-        Лиза 25 сентября 2011
-        Дима 5 сентября 2013
-        1991 НАташа 2 мая
 
-        */
     };
 
     let heading = document.querySelector('.heading');
@@ -114,6 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let countArtemenrko = 0;
         let countBelim = 0;
         let countChum = 0;
+        let countKasper = 0;
 
         for(let key in people) {   
             
@@ -148,6 +159,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if(people[key].name.indexOf('Белименко') != -1 && countBelim < 1) {
                 info.innerHTML += '<h2> Белименки: <h2>'; 
                 countBelim++;
+            }
+            if(people[key].name.indexOf('Касперск') != -1 && countKasper < 1) {
+                info.innerHTML += '<h2> Касперские: <h2>'; 
+                countKasper++;
             }
             
             
