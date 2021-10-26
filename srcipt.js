@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name:'Береза Ирина Юрьевна'
         },
         14: {
-            birthday: '2020-09-31',
+            birthday: '2020-08-31',
             name:'Береза Матвей Игоревич'
         },
         15: {
