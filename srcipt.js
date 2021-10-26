@@ -104,6 +104,26 @@ document.addEventListener('DOMContentLoaded', () => {
         26: {
             birthday: '1991-05-02',
             name:'Касперская Наталья Александровна'
+        },
+        27: {
+            birthday: '1969-02-06',
+            name:'Гапанович Елена Владиславовна'
+        },
+        28: {
+            birthday: '1964-01-14',
+            name:'Гапанович Геннадий Анатольевич'
+        },
+        29: {
+            birthday: '1990-01-26',
+            name:'Гапанович Святослав Геннадиевич'
+        },
+        30: {
+            birthday: '1989-03-30',
+            name:'Гапанович Ольга Сергеевна'
+        },
+        31: {
+            birthday: '2014-06-06',
+            name:'Гапанович Богдан Святославович'
         }
         
 
@@ -125,6 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let countBelim = 0;
         let countChum = 0;
         let countKasper = 0;
+        let countGapan = 0;
 
         for(let key in people) {   
             
@@ -141,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 countBovsun++;
             }
             if(people[key].name.indexOf('Береза') != -1 && countBerez < 1) {
-                info.innerHTML += '<h2> Березы: <h2>'; 
+                info.innerHTML += '<h2> Берёзы: <h2>'; 
                 countBerez++;
             }
             if(people[key].name.indexOf('Березин') != -1 && countBerezin < 1) {
@@ -153,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 countChum++;
             }
             if(people[key].name.indexOf('Артеменко') != -1 && countArtemenrko < 1) {
-                info.innerHTML += '<h2> Артеменки: <h2>'; 
+                info.innerHTML += '<h2> Артёменки: <h2>'; 
                 countArtemenrko++;
             }
             if(people[key].name.indexOf('Белименко') != -1 && countBelim < 1) {
@@ -163,6 +184,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if(people[key].name.indexOf('Касперск') != -1 && countKasper < 1) {
                 info.innerHTML += '<h2> Касперские: <h2>'; 
                 countKasper++;
+            }
+            if(people[key].name.indexOf('Гапанович') != -1 && countGapan < 1) {
+                info.innerHTML += '<h2> Гапановичи: <h2>'; 
+                countGapan++;
             }
             
             
