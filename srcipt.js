@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name:'Касперская Наталья Александровна'
         },
         27: {
-            birthday: '1969-02-06',
+            birthday: '1969-06-02',
             name:'Гапанович Елена Владиславовна'
         },
         28: {
