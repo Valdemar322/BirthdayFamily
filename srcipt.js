@@ -170,9 +170,18 @@ document.addEventListener('DOMContentLoaded', () => {
             let dataRed = people[key].birthday.split('-');
             let date = new Date();
 
+
             
             let age = Math.floor((date.getTime() - birthday.getTime()) / 1000 / 60 / 60 / 24 / 365);
-            birthday.setFullYear(date.getFullYear() + 1);
+            birthday.setFullYear(date.getFullYear() );
+
+            if(date.getTime() <= birthday.getTime()){
+                birthday.setFullYear(date.getFullYear() );
+            }
+            else {
+                birthday.setFullYear(date.getFullYear() +1);
+            }
+            
             
             let countSeconds = Math.floor((birthday.getTime() - date.getTime()) / 1000);
             let countDays = Math.floor(countSeconds / 60 / 60 / 24);
