@@ -218,15 +218,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="s">
                 ${key}.
                 <span style="font-size: 20px;">${people[key].name}</span>
-                <strong> (Дата рождения: ${people[key].birthday.split('-').reverse().join(".")}. Возраст: ${age} </strong> ) <br> 
-                <span style="color:#0B6121;">До дня рождения осталось:
-                (
-                ${countDays} дней  
-                ${countHours} часов 
-                ${countMinutes} минут 
-                ${countSecondss} секунд
-                )
-                </span>
+                <strong> (Дата рождения: ${people[key].birthday.split('-').reverse().join(".")}. Возраст: ${age} </strong> )
+                <div class="timer">
+                    <div class="timer__block">
+                        <div id="days">${countDays}</div>
+                    </div>
+                    дней
+                    <div class="timer__block">
+                        <div id="hours">${countHours}</div>
+                    </div>
+                    часов
+                    <div class="timer__block">
+                        <div id="minutes">${countMinutes}</div>
+                    </div>
+                    минут
+                    <div class="timer__block">
+                        <div id="seconds">${countSecondss}</div>
+                    </div>
+                    секунд
+                </div>
                 </div>
             `;
 
