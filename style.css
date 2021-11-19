@@ -42,27 +42,70 @@ div{
     border: 3px seagreen solid;
     border-radius: 10px;
     font-family: 'Zen Antique Soft', serif;
+    padding: 30px 0;
 }
 
 h2 {
     display: block;
-    text-align: center;
-   
+    text-align: center;  
 }
 
-h1{
+h1 {
     margin-top: 0px;
     color:#FFFF00;
     text-align: center;
 }
 
-.heading{
+.heading {
     margin-top: 0px;
     height: 50px;
     background-color: green;
 }
 
-.s{
+.s {
     text-align: center;
     margin-bottom: 10px; 
+}
+
+.congratulation {
+    margin-top: 50px;
+    width:1000px;
+    border: 3px seagreen solid;
+    border-radius: 10px;
+    font-family: 'Zen Antique Soft', serif;
+}
+
+.congratulation > h2{
+    margin:40px;
+    color: darkorchid;
+}
+
+.congratulation > h2 > span{
+    font-size: 30px;
+    color: red;
+}
+
+canvas {
+    display: block;
+    width:800px;
+    height:600px;
+    border: darkblue 2px dashed;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    font-size: 30px;
+    border-color: goldenrod;
+    border-width: 4px;
+    border-radius: 10px 0 10px 0;
+    background-color: blue;
+
 }

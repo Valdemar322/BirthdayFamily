@@ -126,7 +126,6 @@ document.addEventListener('DOMContentLoaded', () => {
             name:'Гапанович Богдан Святославович'
         }
         
-
     };
 
     let heading = document.querySelector('.heading');
@@ -246,5 +245,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     }, 1000);
+
+
+    //----------------------------------------------------Congratulations-------------------------------------------------------
+
+    let canvas = document.querySelector('canvas');
+
+    canvas.width = canvas.clientWidth;
+    canvas.height = canvas.clientHeight;
+
+    let paintCongratulation = canvas.getContext('2d');
+
+
+    canvas.addEventListener('mousemove', function(e) {
+        let x = e.offsetX;
+        let y = e.offsetY;
+        
+        let startX = x - e.movementX;
+        let startY = y - e.movementy;
+
+        paintCongratulation.moveTo(startX,startY);
+        paintCongratulation.lineTo(x,y);
+        paintCongratulation.stroke();
+    });
+
+    
   
 });
